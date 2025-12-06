@@ -1,19 +1,19 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const popup = document.getElementById("cookie-popup");
-    const acceptBtn = document.getElementById("accept-cookies");
+fetch("../cookie-popup.html")
+    .then(response => response.text())
+    .then(data => {
+        document.body.insertAdjacentHTML("beforeend", data);
 
-    // Check if cookies were already accepted
-    if (localStorage.getItem("cookie_accepted") === "yes") {
-        popup.style.display = "none";
-        return;
-    }
+        const popup = document.getElementById("cookie-popup");
+        const button = document.getElementById("accept-cookies");
 
-    // If not accepted, show popup
-    popup.style.display = "block";
+        // Show popup
+        popup.style.display = "block";
 
-    acceptBtn.addEventListener("click", function () {
-        localStorage.setItem("cookie_accepted", "yes");
-        popup.style.display = "none";
+        // When user clicks Accept
+        button.addEventListener("click", () => {
+            localStorage.setItem("cookie_accepted", "true");
+            popup.style.display = "none";
+        });
     });
-});
+
 
