@@ -5,16 +5,16 @@
     <title>Kenneth Ospalik Portfolio</title>
     <meta charset="utf-8">
 
-    <!-- Accessibility-compliant viewport -->
+    <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3VL1DQP26"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-W3VL1DQP26');
+        function gtag(){ dataLayer.push(arguments); }
+        gtag("js", new Date());
+        gtag("config", "G-W3VL1DQP26");
     </script>
 
     <!-- Favicons -->
@@ -25,7 +25,7 @@
     <link rel="icon" type="image/png" sizes="512x512" href="./android-chrome-512x512.png">
     <link rel="manifest" href="./site.webmanifest">
 
-    <!-- Social Media Meta Tags -->
+    <!-- Social Sharing Meta -->
     <meta name="description" content="Portfolio website for Kenneth Ospalik – Business Analytics student at the University of Iowa.">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Kenneth Ospalik Portfolio">
@@ -33,16 +33,18 @@
     <meta property="og:image" content="https://www.kennethospalik.com/preview-image.png">
     <meta property="og:url" content="https://www.kennethospalik.com">
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Kenneth Ospalik Portfolio">
     <meta name="twitter:description" content="Explore my projects, resume, and contact information.">
     <meta name="twitter:image" content="https://www.kennethospalik.com/preview-image.png">
 
+    <!-- Main Styles -->
     <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Cookie Popup Styles -->
     <link rel="stylesheet" href="cookie-popup.css">
 
-    <!-- Add visually-hidden class for screen-reader-only labels -->
+    <!-- Accessibility utility -->
     <style>
         .visually-hidden {
             position: absolute;
@@ -55,10 +57,6 @@
 </head>
 
 <body class="is-preload">
-
-    <!-- Load Cookie Popup HTML and Script -->
-    <div id="cookie-popup-container"></div>
-    <script src="cookie-popup.js"></script>
 
     <!-- Nav -->
     <nav id="nav">
@@ -86,6 +84,7 @@
                     <p>I am a Business Analytics & Information Systems major at the University of Iowa, interested in data analytics, web development, and creative media.</p>
 
                     <p><a href="resume.pdf" download>Download My Resume (PDF)</a></p>
+
                     <p><a href="mailto:kospalik@uiowa.edu">Email Me!</a></p>
 
                     <p>
@@ -104,7 +103,7 @@
         <div class="container">
             <header>
                 <h2>What I Do</h2>
-                <p>Here’s a quick look at the main areas I focus on.</p>
+                <p>A quick look at the main areas I focus on.</p>
             </header>
 
             <div class="row aln-center">
@@ -112,7 +111,7 @@
                     <section class="box style1">
                         <span class="icon featured fa-comments"></span>
                         <h3>Data Analytics</h3>
-                        <p>I work with data using Python, Excel, and Orange to find insights and solve real-world problems.</p>
+                        <p>I use Python, Excel, and Orange to analyze data and solve real problems.</p>
                     </section>
                 </div>
 
@@ -120,7 +119,7 @@
                     <section class="box style1">
                         <span class="icon solid featured fa-camera-retro"></span>
                         <h3>Web Development</h3>
-                        <p>I build modern, responsive websites using HTML, CSS, Python, Flask, and Azure hosting.</p>
+                        <p>I build modern websites using HTML, CSS, Flask, and Azure cloud hosting.</p>
                     </section>
                 </div>
 
@@ -128,13 +127,13 @@
                     <section class="box style1">
                         <span class="icon featured fa-thumbs-up"></span>
                         <h3>Problem Solving</h3>
-                        <p>I enjoy solving problems efficiently and improving processes wherever possible.</p>
+                        <p>I enjoy finding efficient solutions and improving processes.</p>
                     </section>
                 </div>
             </div>
 
             <footer>
-                <p>Want to see some examples of my recent work?</p>
+                <p>Want to see some examples of my work?</p>
                 <a href="#portfolio" class="button large scrolly">View My Portfolio</a>
             </footer>
         </div>
@@ -145,75 +144,36 @@
         <div class="container">
             <header>
                 <h2>Recent Projects</h2>
-                <p>Here are a few things I've created or worked on recently.</p>
+                <p>Some things I've created or worked on recently.</p>
             </header>
 
             <div class="row">
-
                 <div class="col-4 col-6-medium col-12-small">
                     <article class="box style2">
-                        <a href="#" class="image featured">
-                            <img src="images/pic01.jpg" alt="Project One Preview">
-                        </a>
-                        <h3><a href="#">MLB Salary Data Analysis</a></h3>
-                        <p>A Python + Pandas project exploring relationships between MLB player performance and salary.</p>
+                        <a class="image featured"><img src="images/pic01.jpg" alt="MLB Salary Data Analysis"></a>
+                        <h3>MLB Salary Data Analysis</h3>
+                        <p>Python + Pandas analysis exploring WAR vs salary trends.</p>
                     </article>
                 </div>
 
                 <div class="col-4 col-6-medium col-12-small">
                     <article class="box style2">
-                        <a href="#" class="image featured">
-                            <img src="images/pic02.jpg" alt="Project Two Preview">
-                        </a>
-                        <h3><a href="#">Project Two</a></h3>
-                        <p>A brief explanation of the work completed.</p>
+                        <a class="image featured"><img src="images/pic02.jpg" alt="Project Two"></a>
+                        <h3>Project Two</h3>
+                        <p>Description placeholder.</p>
                     </article>
                 </div>
 
                 <div class="col-4 col-6-medium col-12-small">
                     <article class="box style2">
-                        <a href="#" class="image featured">
-                            <img src="images/pic03.jpg" alt="Project Three Preview">
-                        </a>
-                        <h3><a href="#">Project Three</a></h3>
-                        <p>A simple overview of this project and its purpose.</p>
+                        <a class="image featured"><img src="images/pic03.jpg" alt="Project Three"></a>
+                        <h3>Project Three</h3>
+                        <p>Description placeholder.</p>
                     </article>
                 </div>
-
-                <div class="col-4 col-6-medium col-12-small">
-                    <article class="box style2">
-                        <a href="#" class="image featured">
-                            <img src="images/pic04.jpg" alt="Project Four Preview">
-                        </a>
-                        <h3><a href="#">Project Four</a></h3>
-                        <p>Details about the goals and outcome of this project.</p>
-                    </article>
-                </div>
-
-                <div class="col-4 col-6-medium col-12-small">
-                    <article class="box style2">
-                        <a href="#" class="image featured">
-                            <img src="images/pic05.jpg" alt="Project Five Preview">
-                        </a>
-                        <h3><a href="#">Project Five</a></h3>
-                        <p>A quick summary of what this project accomplished.</p>
-                    </article>
-                </div>
-
-                <div class="col-4 col-6-medium col-12-small">
-                    <article class="box style2">
-                        <a href="#" class="image featured">
-                            <img src="images/pic06.jpg" alt="Project Six Preview">
-                        </a>
-                        <h3><a href="#">Project Six</a></h3>
-                        <p>A small description explaining the purpose of this work.</p>
-                    </article>
-                </div>
-
             </div>
 
             <footer>
-                <p>Want to reach out or work together?</p>
                 <a href="#contact" class="button large scrolly">Contact Me</a>
             </footer>
         </div>
@@ -224,68 +184,46 @@
         <div class="container medium">
             <header>
                 <h2>Contact Me</h2>
-                <p>Have a question or want to connect? Send me a message.</p>
             </header>
 
-            <div class="row">
-                <div class="col-12">
+            <form method="post" action="#">
+                <div class="row">
+                    <div class="col-6 col-12-small">
+                        <label for="name" class="visually-hidden">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Name">
+                    </div>
 
-                    <!-- Accessible contact form -->
-                    <form method="post" action="#">
-                        <div class="row">
+                    <div class="col-6 col-12-small">
+                        <label for="email" class="visually-hidden">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email">
+                    </div>
 
-                            <div class="col-6 col-12-small">
-                                <label for="name" class="visually-hidden">Name</label>
-                                <input type="text" name="name" id="name" placeholder="Name">
-                            </div>
+                    <div class="col-12">
+                        <label for="subject" class="visually-hidden">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject">
+                    </div>
 
-                            <div class="col-6 col-12-small">
-                                <label for="email" class="visually-hidden">Email</label>
-                                <input type="email" name="email" id="email" placeholder="Email">
-                            </div>
+                    <div class="col-12">
+                        <label for="message" class="visually-hidden">Message</label>
+                        <textarea id="message" name="message" placeholder="Message"></textarea>
+                    </div>
 
-                            <div class="col-12">
-                                <label for="subject" class="visually-hidden">Subject</label>
-                                <input type="text" name="subject" id="subject" placeholder="Subject">
-                            </div>
-
-                            <div class="col-12">
-                                <label for="message" class="visually-hidden">Message</label>
-                                <textarea name="message" id="message" placeholder="Message"></textarea>
-                            </div>
-
-                            <div class="col-12">
-                                <ul class="actions">
-                                    <li><input type="submit" value="Send Message"></li>
-                                    <li><input type="reset" value="Clear Form" class="alt"></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </form>
+                    <div class="col-12">
+                        <ul class="actions">
+                            <li><input type="submit" value="Send Message"></li>
+                            <li><input type="reset" value="Clear Form" class="alt"></li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="col-12">
-                    <hr>
-                    <h3>Find Me Online</h3>
-                    <ul class="social">
-                        <li><a href="https://www.linkedin.com/in/kennethospalik/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                        <li><a href="https://github.com/kennethospalik" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                    </ul>
-                    <hr>
-                </div>
-            </div>
+            </form>
 
             <footer>
-                <ul id="copyright">
-                    <li>&copy; 2025 Kenneth Ospalik</li>
-                    <li>DPortfolio Project for BAIS 3300</li>
-                </ul>
+                <p>&copy; 2025 Kenneth Ospalik</p>
             </footer>
         </div>
     </article>
 
-    <!-- Scripts -->
+    <!-- Script Dependencies -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
@@ -293,7 +231,8 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
 
+    <!-- Cookie Popup Loader -->
+    <script src="cookie-popup.js"></script>
+
 </body>
 </html>
-
-
