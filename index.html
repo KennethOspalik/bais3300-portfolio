@@ -53,6 +53,18 @@
     </style>
 </head>
 
+<script>
+if (!localStorage.getItem("cookiesAccepted")) {
+    document.getElementById("cookie-popup").style.display = "block";
+}
+
+document.getElementById("accept-cookies").onclick = function () {
+    localStorage.setItem("cookiesAccepted", "yes");
+    document.getElementById("cookie-popup").style.display = "none";
+};
+</script>
+
+
 <!-- Cookie Popup -->
 <div id="cookie-popup"></div>
 <script src="cookie-popup.js"></script>

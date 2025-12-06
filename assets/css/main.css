@@ -2443,3 +2443,14 @@ input, select, textarea {
 					}
 
 	}
+	.cookie-popup {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    z-index: 9999;
+	}
