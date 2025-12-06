@@ -4,19 +4,20 @@
 <head>
     <title>Kenneth Ospalik Portfolio</title>
     <meta charset="utf-8">
-    
+
     <!-- Accessibility-compliant viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3VL1DQP26"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-W3VL1DQP26');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-W3VL1DQP26');
     </script>
-    <!-- Favicon -->
+
+    <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
@@ -38,8 +39,8 @@
     <meta name="twitter:description" content="Explore my projects, resume, and contact information.">
     <meta name="twitter:image" content="https://www.kennethospalik.com/preview-image.png">
 
-
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="cookie-popup.css">
 
     <!-- Add visually-hidden class for screen-reader-only labels -->
     <style>
@@ -53,28 +54,11 @@
     </style>
 </head>
 
-<script>
-if (!localStorage.getItem("cookiesAccepted")) {
-    document.getElementById("cookie-popup").style.display = "block";
-}
-
-document.getElementById("accept-cookies").onclick = function () {
-    localStorage.setItem("cookiesAccepted", "yes");
-    document.getElementById("cookie-popup").style.display = "none";
-};
-</script>
-
-
-<!-- Cookie Popup -->
-<div id="cookie-popup"></div>
-<script src="cookie-popup.js"></script>
-<link rel="stylesheet" href="cookie-popup.css">
-
-<script src="assets/js/cookie-popup.js"></script>
-</body>
-</html>
-
 <body class="is-preload">
+
+    <!-- Load Cookie Popup HTML and Script -->
+    <div id="cookie-popup-container"></div>
+    <script src="cookie-popup.js"></script>
 
     <!-- Nav -->
     <nav id="nav">
@@ -92,24 +76,23 @@ document.getElementById("accept-cookies").onclick = function () {
             <div class="row">
                 <div class="col-4 col-5-large col-12-medium">
                     <span class="image fit">
-                        <img src="images/kenny.png" alt="Portrait of Kenny Ospalik">
+                        <img src="images/kenny.png" alt="Portrait of Kenneth Ospalik">
                     </span>
                 </div>
                 <div class="col-8 col-7-large col-12-medium">
                     <header>
                         <h1>Hi, I'm <strong>Kenneth Ospalik</strong>.</h1>
                     </header>
-                    <p>I am a Business Analytics & Information Systems major at the University of Iowa, interested in data analytics, web development, and creative media. Explore my work and learn more about what I do</p>
+                    <p>I am a Business Analytics & Information Systems major at the University of Iowa, interested in data analytics, web development, and creative media.</p>
+
+                    <p><a href="resume.pdf" download>Download My Resume (PDF)</a></p>
+                    <p><a href="mailto:kospalik@uiowa.edu">Email Me!</a></p>
+
                     <p>
-                    <a href="resume.pdf" download>Download My Resume (PDF)</a>
+                        <a href="https://linkedin.com/in/kennethospalik">LinkedIn</a> |
+                        <a href="https://github.com/kennethospalik">GitHub</a>
                     </p>
-                    <p>
-                    <a href="mailto:kospalik@uiowa.edu">Email Me!</a>
-                    </p>
-                    <p>
-                    <a href="https://linkedin.com/in/...">LinkedIn</a> |
-                    <a href="https://github.com/kospalik">GitHub</a>
-                    </p>
+
                     <a href="#work" class="button large scrolly">Learn more about what I do</a>
                 </div>
             </div>
@@ -123,12 +106,13 @@ document.getElementById("accept-cookies").onclick = function () {
                 <h2>What I Do</h2>
                 <p>Here’s a quick look at the main areas I focus on.</p>
             </header>
+
             <div class="row aln-center">
                 <div class="col-4 col-6-medium col-12-small">
                     <section class="box style1">
                         <span class="icon featured fa-comments"></span>
                         <h3>Data Analytics</h3>
-                        <p>I work with data using Python, Excel, and Orange to find insights and solve real-world problems</p>
+                        <p>I work with data using Python, Excel, and Orange to find insights and solve real-world problems.</p>
                     </section>
                 </div>
 
@@ -136,7 +120,7 @@ document.getElementById("accept-cookies").onclick = function () {
                     <section class="box style1">
                         <span class="icon solid featured fa-camera-retro"></span>
                         <h3>Web Development</h3>
-                        <p>I build modern, responsive websites using HTML, CSS, Python, Flask, and Azure cloud hosting</p>
+                        <p>I build modern, responsive websites using HTML, CSS, Python, Flask, and Azure hosting.</p>
                     </section>
                 </div>
 
@@ -144,7 +128,7 @@ document.getElementById("accept-cookies").onclick = function () {
                     <section class="box style1">
                         <span class="icon featured fa-thumbs-up"></span>
                         <h3>Problem Solving</h3>
-                        <p>I enjoy solving problems efficiently, finding useful solutions, and improving processes wherever possible.</p>
+                        <p>I enjoy solving problems efficiently and improving processes wherever possible.</p>
                     </section>
                 </div>
             </div>
@@ -169,17 +153,17 @@ document.getElementById("accept-cookies").onclick = function () {
                 <div class="col-4 col-6-medium col-12-small">
                     <article class="box style2">
                         <a href="#" class="image featured">
-                            <img src="images/pic01.jpg" alt="Preview of Project One">
+                            <img src="images/pic01.jpg" alt="Project One Preview">
                         </a>
                         <h3><a href="#">MLB Salary Data Analysis</a></h3>
-                        <p>A Python + Pandas project exploring the relationship between player performance and salary.</p>
+                        <p>A Python + Pandas project exploring relationships between MLB player performance and salary.</p>
                     </article>
                 </div>
 
                 <div class="col-4 col-6-medium col-12-small">
                     <article class="box style2">
                         <a href="#" class="image featured">
-                            <img src="images/pic02.jpg" alt="Preview of Project Two">
+                            <img src="images/pic02.jpg" alt="Project Two Preview">
                         </a>
                         <h3><a href="#">Project Two</a></h3>
                         <p>A brief explanation of the work completed.</p>
@@ -189,7 +173,7 @@ document.getElementById("accept-cookies").onclick = function () {
                 <div class="col-4 col-6-medium col-12-small">
                     <article class="box style2">
                         <a href="#" class="image featured">
-                            <img src="images/pic03.jpg" alt="Preview of Project Three">
+                            <img src="images/pic03.jpg" alt="Project Three Preview">
                         </a>
                         <h3><a href="#">Project Three</a></h3>
                         <p>A simple overview of this project and its purpose.</p>
@@ -199,17 +183,17 @@ document.getElementById("accept-cookies").onclick = function () {
                 <div class="col-4 col-6-medium col-12-small">
                     <article class="box style2">
                         <a href="#" class="image featured">
-                            <img src="images/pic04.jpg" alt="Preview of Project Four">
+                            <img src="images/pic04.jpg" alt="Project Four Preview">
                         </a>
                         <h3><a href="#">Project Four</a></h3>
-                        <p>Details about the goals and outcome of the project.</p>
+                        <p>Details about the goals and outcome of this project.</p>
                     </article>
                 </div>
 
                 <div class="col-4 col-6-medium col-12-small">
                     <article class="box style2">
                         <a href="#" class="image featured">
-                            <img src="images/pic05.jpg" alt="Preview of Project Five">
+                            <img src="images/pic05.jpg" alt="Project Five Preview">
                         </a>
                         <h3><a href="#">Project Five</a></h3>
                         <p>A quick summary of what this project accomplished.</p>
@@ -219,7 +203,7 @@ document.getElementById("accept-cookies").onclick = function () {
                 <div class="col-4 col-6-medium col-12-small">
                     <article class="box style2">
                         <a href="#" class="image featured">
-                            <img src="images/pic06.jpg" alt="Preview of Project Six">
+                            <img src="images/pic06.jpg" alt="Project Six Preview">
                         </a>
                         <h3><a href="#">Project Six</a></h3>
                         <p>A small description explaining the purpose of this work.</p>
@@ -240,13 +224,13 @@ document.getElementById("accept-cookies").onclick = function () {
         <div class="container medium">
             <header>
                 <h2>Contact Me</h2>
-                <p>Have a question or want to connect? Send me a message and I’ll respond as soon as I can.</p>
+                <p>Have a question or want to connect? Send me a message.</p>
             </header>
 
             <div class="row">
                 <div class="col-12">
 
-                    <!-- Updated form with accessibility labels -->
+                    <!-- Accessible contact form -->
                     <form method="post" action="#">
                         <div class="row">
 
@@ -286,8 +270,7 @@ document.getElementById("accept-cookies").onclick = function () {
                     <h3>Find Me Online</h3>
                     <ul class="social">
                         <li><a href="https://www.linkedin.com/in/kennethospalik/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                        <li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
-                        <li><a href="https://github.com/kennethospalik" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                        <li><a href="https://github.com/kennethospalik" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
                     </ul>
                     <hr>
                 </div>
@@ -295,7 +278,7 @@ document.getElementById("accept-cookies").onclick = function () {
 
             <footer>
                 <ul id="copyright">
-                    <li>&copy; 2025 Kenny Ospalik</li>
+                    <li>&copy; 2025 Kenneth Ospalik</li>
                     <li>DPortfolio Project for BAIS 3300</li>
                 </ul>
             </footer>
@@ -310,7 +293,7 @@ document.getElementById("accept-cookies").onclick = function () {
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
 
-    <script src="cookie-popup.js"></script>
 </body>
 </html>
+
 

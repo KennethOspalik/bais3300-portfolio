@@ -1,19 +1,20 @@
-fetch("../cookie-popup.html")
-    .then(response => response.text())
-    .then(data => {
-        document.body.insertAdjacentHTML("beforeend", data);
+document.addEventListener("DOMContentLoaded", () => {
 
-        const popup = document.getElementById("cookie-popup");
-        const button = document.getElementById("accept-cookies");
+    const popup = document.getElementById("cookie-popup");
+    const button = document.getElementById("accept-cookies");
 
-        // Show popup
+    // If user has not accepted cookies, show popup
+    if (!localStorage.getItem("cookie_accepted")) {
         popup.style.display = "block";
+    }
 
-        // When user clicks Accept
-        button.addEventListener("click", () => {
-            localStorage.setItem("cookie_accepted", "true");
-            popup.style.display = "none";
-        });
+    // When user clicks Accept
+    button.addEventListener("click", () => {
+        localStorage.setItem("cookie_accepted", "true");
+        popup.style.display = "none";
     });
+
+});
+
 
 
